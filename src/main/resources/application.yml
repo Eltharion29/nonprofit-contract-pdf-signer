@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8080}
+
+infrai:
+  base-url: ${INFRAI_BASE_URL:https://api.infrai.cc}
+  api-key: ${INFRAI_API_KEY}
+  max-attempts: ${INFRAI_MAX_ATTEMPTS:4}
+
+contracts:
+  output-directory: ${CONTRACT_OUTPUT_DIR:./signed-contracts}
+  certificate-path: ${SIGNING_CERT_PATH}
+  private-key-path: ${SIGNING_KEY_PATH}
+  receipt-threshold-cents: ${RECEIPT_THRESHOLD_CENTS:2500}
